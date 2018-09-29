@@ -76,7 +76,7 @@
         displayUserList();
       }
     };
-    this.createElement = function (index) {
+    this.createElement = function () {
       var el = document.createElement('tr');
       var cEl = this.createPropertyElement;
       el.appendChild(cEl(this.user.getFullName()));

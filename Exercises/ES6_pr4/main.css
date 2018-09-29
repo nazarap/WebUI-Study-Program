@@ -1,0 +1,91 @@
+
+/* Styles for main elements */
+main.content {
+    display: flex;
+}
+
+main.content > article {
+    display: inline-block;
+    width: 50%;
+    padding: 0 30px;
+}
+
+main.content > article.content-list {
+    border-left: 1px solid #b2b2b2;
+}
+
+main.content > article > header > h1 {
+    font-size: 25px;
+    color: #018786;
+    text-align: center;
+}
+
+/* Styles for table */
+.user-list {
+    width: 100%;
+}
+
+.user-list .tr-left {
+    text-align: left;
+}
+
+.user-list .tr-center {
+    text-align: center;
+}
+
+.user-list thead tr {
+    background-color: #f2f2f2;
+    height: 45px;
+}
+
+.user-list tbody tr {
+    height: 40px;
+}
+
+/* Styles for global elements. Such as button, input, select */
+.btn {
+    cursor: pointer;
+}
+
+.btn.create-btn {
+    width: 200px;
+    height: 30px;
+    background: white;
+    border: 2px solid #018786;
+    border-radius: 20px;
+    color: #018786;
+    font-weight: 700;
+}
+
+.btn.remove-btn {
+    font-weight: 700;
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.btn.remove-btn:hover {
+    background-color: #f2f2f2;
+}
+
+.float {
+    float: right;
+}
+
+.input-field {
+    border: 1px solid #018786;
+    border-radius: 5px;
+    height: 25px;
+    padding: 0 10px;
+}
+
+.input-field.middle-size {
+    display: block;
+    width: 50%;
+}
+
+.action-buttons {
+    min-width: 30px;
+}
