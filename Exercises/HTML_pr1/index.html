@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Practice lesson 1</title>
+</head>
+<body>
+    <!--Header for HTML Practice lesson 1-->
+    <header>
+        <a href="./../../index.html">./../ go back</a>
+        <h1>HTML Practice lesson 1</h1>
+        <h4>You have to create page that has next view</h4>
+        <hr>
+    </header>
+    <!--Main content page for HTML Practice lesson 1-->
+    <main>
+        <!--Article tag for Create new User block-->
+        <article>
+            <!--Create new User block header-->
+            <header>
+                <h1>Create new User</h1>
+            </header>
+            <!--Create new User content block-->
+            <article>
+                <!--Form-->
+                <form>
+                    <!--Input field-->
+                    <aside>
+                        <!--Label for input field-->
+                        <label for="first_name">First Name:</label>
+                        <!--Input field-->
+                        <input id="first_name">
+                    </aside>
+                    <br>
+                    <aside>
+                        <label for="last_name">Last Name:</label>
+                        <input id="last_name">
+                    </aside>
+                    <br>
+                    <aside>
+                        <label for="age">Age:</label>
+                        <input id="age">
+                    </aside>
+                    <br>
+                    <aside>
+                        <label for="city">City:</label>
+                        <input id="city">
+                    </aside>
+                    <br>
+                    <aside>
+                        <label for="interests">List of Interests:</label>
+                        <!--Select field-->
+                        <select id="interests">
+                            <option>Basketball</option>
+                            <option>Reading</option>
+                            <option selected>Programing</option>
+                        </select>
+                        or
+                        <input id="interest" placeholder="Type your own interest">
+                    </aside>
+                    <br>
+                    <!--Create new User button-->
+                    <button>Create</button>
+                </form>
+            </article>
+        </article>
+        <!--Article tag for List of Users block-->
+        <article>
+            <!--List of Users block header-->
+            <header>
+                <h1>List of Users</h1>
+            </header>
+            <!--List of Users block content-->
+            <article>
+                <!--Table with users list-->
+                <table>
+                    <!--Table header-->
+                    <thead>
+                        <tr>
+                            <th>User name</th>
+                            <th>Age</th>
+                            <th>City</th>
+                            <th>Interests</th>
+                            <!--Action buttons-->
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <!--Table list content-->
+                    <tbody>
+                        <tr>
+                            <td>Bruce Wayne</td>
+                            <td>35</td>
+                            <td>Gotham</td>
+                            <td>Reading, Help people</td>
+                            <!--Remove item button-->
+                            <td><button>x</button></td>
+                        </tr>
+                        <tr>
+                            <td>Bruce Wayne</td>
+                            <td>35</td>
+                            <td>Gotham</td>
+                            <td>Reading, Help people</td>
+                            <td><button>x</button></td>
+                        </tr>
+                        <tr>
+                            <td>Bruce Wayne</td>
+                            <td>35</td>
+                            <td>Gotham</td>
+                            <td>Reading, Help people</td>
+                            <td><button>x</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </article>
+    </main>
+</body>
+</html>
