@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Practice lesson 3</title>
+
+    <!--Upload styles from main.css file-->
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <!--Header for HTML Practice lesson 1-->
+    <header>
+        <a href="./../../index.html">./../ go back</a>
+        <h1>JavaScript Practice lesson 3</h1>
+        <h4>You have to create scripts for our page and do it dynamical. Example</h4>
+        <hr>
+    </header>
+    <!--Main content page for HTML Practice lesson 1-->
+    <main class="content">
+        <!--Article tag for Create new User block-->
+        <article class="content-create">
+            <!--Create new User block header-->
+            <header>
+                <h1>Create new User</h1>
+            </header>
+            <!--Create new User content block-->
+            <article>
+                <!--Form-->
+                <form onsubmit="event.preventDefault();">
+                    <!--Input field-->
+                    <aside>
+                        <!--Label for input field-->
+                        <label for="first_name">First Name:</label>
+                        <!--Input field-->
+                        <input id="first_name" class="input-field middle-size">
+                    </aside>
+                    <br>
+                    <aside>
+                        <label for="last_name">Last Name:</label>
+                        <input id="last_name" class="input-field middle-size">
+                    </aside>
+                    <br>
+                    <aside>
+                        <label for="age">Age:</label>
+                        <input id="age" class="input-field middle-size">
+                    </aside>
+                    <br>
+                    <aside>
+                        <label for="city">City:</label>
+                        <input id="city" class="input-field middle-size">
+                    </aside>
+                    <br>
+                    <aside>
+                        <label for="interests">List of Interests:</label>
+                        <!--Select field-->
+                        <select id="interests"
+                                class="input-field">
+                        </select>
+                        or
+                        <input id="interest"
+                               placeholder="Type your own interest"
+                               class="input-field">
+                    </aside>
+                    <br>
+                    <!--Create new User button-->
+                    <button id="create-user"
+                            class="btn create-btn float">Create</button>
+                </form>
+            </article>
+        </article>
+        <!--Article tag for List of Users block-->
+        <article class="content-list">
+            <!--List of Users block header-->
+            <header>
+                <h1>List of Users</h1>
+            </header>
+            <!--List of Users block content-->
+            <article>
+                <!--Table with users list-->
+                <table class="user-list">
+                    <!--Table header-->
+                    <thead>
+                        <tr class="tr-left">
+                            <th>User name</th>
+                            <th>Age</th>
+                            <th>City</th>
+                            <th>Interests</th>
+                            <!--Action buttons-->
+                            <th class="action-buttons"></th>
+                        </tr>
+                    </thead>
+                    <!--Table list content-->
+                    <tbody id="user-list">
+                    </tbody>
+                </table>
+            </article>
+        </article>
+    </main>
+
+    <!--Upload scripts from app.js file-->
+    <script src="app.js" type="application/javascript"></script>
+</body>
+</html>
