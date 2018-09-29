@@ -1,0 +1,26 @@
+{
+  "name": "webui.study.program",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nazarap/WebUI-Study-Program.git"
+  },
+  "keywords": [
+    "webui",
+    "javascript",
+    "react",
+    "reactnative",
+    "study"
+  ],
+  "author": "Nazar Oryschuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nazarap/WebUI-Study-Program/issues"
+  },
+  "homepage": "https://github.com/nazarap/WebUI-Study-Program#readme"
+}
