@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Install dependency with npm</title>
+</head>
+<body>
+    <header>
+        <a href="./../../index.html">./../ go back</a>
+        <h1>React config application tutorial</h1>
+        <h4><a href="https://github.com/nazarap/WebUI-Study-Program/tree/master/Examples/npm_ex1"
+           target="_blank">Code example</a></h4>
+        <hr>
+    </header>
+    <main>
+        <aside>
+            <h4>React application example</h4>
+            <b><a href="./example.html">React app</a></b>
+        </aside>
+        <aside>
+            <h4>1. Install React and React dom</h4>
+            <code>
+                $ npm run react react-dom -S
+            </code>
+        </aside>
+        <aside>
+            <h4>2. Install Babel present for react</h4>
+            <code>
+                $ npm i @babel/preset-react -D
+            </code>
+        </aside>
+        <aside>
+            <h4>3. Add react present to presents array in webpack.config.js</h4>
+            <code>
+                presets: [<b>'@babel/preset-react'</b>, '@babel/preset-env']
+            </code>
+        </aside>
+        <aside>
+            <h4>4. Import react and react dom render method in app.js file</h4>
+            <code>
+                import React from 'react';<br>
+                import { render } from 'react-dom';
+            </code>
+        </aside>
+        <aside>
+            <h4>5. Add code for render some html</h4>
+            <code>
+                render(<br>
+                    &lt;h1&gt;Hello, world!&lt;/h1&gt;,<br>
+                    document.getElementById('root')<br>
+                );<br>
+            </code>
+        </aside>
+        <aside>
+            <h4>6. Add element with id root into index.html</h4>
+            <code>
+                &lt;main id="root"&gt;&lt;/main&gt;
+            </code>
+        </aside>
+        <aside>
+            <h4>7. Build our application</h4>
+            <code>
+                $ npm run webpack
+            </code>
+        </aside>
+        <aside>
+            <h4>8. Now we have to import this file from index.html</h4>
+            <code typeof="javascript">
+                &lt;script src="./build/app.bundle.js" type="application/javascript"&gt;&lt;/script&gt;
+            </code>
+        </aside><br><br>
+    </main>
+</body>
+</html>
