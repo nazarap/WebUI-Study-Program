@@ -1,0 +1,21 @@
+{
+  "name": "npm_ex1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "author": "Nazar Oryschuk",
+  "license": "ISC",
+  "scripts": {
+    "webpack": "webpack --mode development"
+  },
+  "dependencies": {
+    "lodash": "^4.17.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
+}

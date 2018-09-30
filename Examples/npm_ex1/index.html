@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Install dependency with npm</title>
+</head>
+<body>
+    <!--Header for HTML Practice lesson 1-->
+    <header>
+        <a href="./../../index.html">./../ go back</a>
+        <h1>Install lodash. Config webpack and babel</h1>
+        <hr>
+    </header>
+    <main>
+        <aside>
+            <h4>1. Install Node and npm on your PC</h4>
+            <a href="https://blog.teamtreehouse.com/install-node-js-npm-windows" target="_blank">How to install Node and npm</a><br>
+            <a href="https://nodejs.org/uk/" target="_blank">About Node</a><br>
+            <a href="https://www.npmjs.com/" target="_blank">About npm</a><br>
+        </aside>
+        <aside>
+            <h4>2. Initialize npm and create package.json</h4>
+            <code>
+                $ npm init
+            </code>
+        </aside>
+        <aside>
+            <h4>Install a dependency by name. For example</h4>
+            <code>
+                $ npm install (package_name) -S
+            </code>
+        </aside>
+        <aside>
+            <h4>3. Install lodash like dependency</h4>
+            <code>
+                $ npm install lodash -S
+            </code>
+            <h4>You can find lodash package in your project by this path <i>./node_modules/lodash</i></h4>
+        </aside>
+        <aside>
+            <h4>4. Install webpack, babel like dev-dependency for build our project</h4>
+            <code>
+                $ npm install babel-loader @babel/core @babel/preset-env webpack -D
+            </code><br><br>
+            <a href="http://ccoenraets.github.io/es6-tutorial-data/babel-webpack/">Babel, webpack example</a>
+        </aside>
+        <aside>
+            <h4>5. Create webpack.config.js file in project root directory</h4>
+            <h4>6. Put this code into file
+                <a href="https://github.com/nazarap/WebUI-Study-Program/blob/master/webpack.config.js"
+                   target="_blank">webpack.config.js</a></h4>
+        </aside>
+        <aside>
+            <h4>7. Add script into ypur package.json file</h4>
+            <code typeof="javascript">
+                scripts: { "webpack": "webpack --mode development" }
+            </code><br>
+            <h4>Example:
+            <a href="https://github.com/nazarap/WebUI-Study-Program/blob/master/package.json"
+               target="_blank">package.json</a></h4>
+        </aside>
+        <aside>
+            <h4>8. Import lodash package in app.js</h4>
+            <code typeof="javascript">
+                import lodash from 'lodash';
+            </code>
+            <h4>9. And try to use any function from <a href="https://lodash.com/">lodash</a> library</h4>
+            <code typeof="javascript">
+                const square = n => n * n;<br>
+                const print = value => console.log(value);<br><br>
+
+                print( lodash.map([4, 8], square) );<br>
+                // => [16, 64]<br><br>
+
+                print( lodash.map({ 'a': 4, 'b': 8 }, square) );<br>
+                // => [16, 64] (iteration order is not guaranteed)<br><br>
+
+                const users = [<br>
+                { 'user': 'barney' },<br>
+                { 'user': 'fred' }<br>
+                ];<br><br>
+
+                // The `_.property` iteratee shorthand.<br>
+                print( lodash.map(users, 'user') );<br>
+                // => ['barney', 'fred']
+            </code>
+            <h4>Example:
+                <a href="https://github.com/nazarap/WebUI-Study-Program/blob/master/package.json"
+                   target="_blank">app.js</a></h4>
+        </aside>
+        <aside>
+            <h4>10. Run command in Node command ot terminal</h4>
+            <code typeof="javascript">
+                $ npm run webpack
+            </code>
+            <h4>In ./build folder we have new file app.bundle.js</h4>
+        </aside>
+        <aside>
+            <h4>11. Run command in Node command ot terminal</h4>
+            <code typeof="javascript">
+                $ npm run webpack
+            </code>
+            <h4>In ./build folder we have new file app.bundle.js</h4>
+        </aside>
+        <aside>
+            <h4>12. Now we have to import this file from index.html</h4>
+            <code typeof="javascript">
+                &lt;script src="./build/app.bundle.js" type="application/javascript"&gt;&lt;/script&gt;
+            </code>
+        </aside><br><br>
+    </main>
+    <script src="./build/app.bundle.js" type="application/javascript"></script>
+</body>
+</html>
